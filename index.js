@@ -12,6 +12,7 @@
 
     var app = express();
 
+    // multer configuration
     var storage = multer.diskStorage({
         destination: function (req, file, cb) {
             cb(null, '/images/multer/my-uploads')
